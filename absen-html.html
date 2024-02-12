@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YNNA ABSENSI</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="icon" href="https://telegra.ph/file/05f8ba277213961a14667.jpg" type="image/jpg">
+
+
+<!-- Audio -->
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+
+
+<!-- Custom CSS -->
+
+<style>
+  body {
+    background-color: #000; /* Background hitam */
+  }
+
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .btn-glow {
+    position: relative;
+    outline: none;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-glow:hover {
+    box-shadow: 0 0 15px #007bff;
+  }
+
+  .btn-glow:active {
+    box-shadow: 0 0 15px #0056b3;
+    transform: translateY(2px);
+  }
+
+  /* Sederhana "kembang api" efek */
+  .fireworks {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://example.com/fireworks.gif') center center no-repeat;
+    background-size: cover;
+    z-index: 999;
+  }
+</style>
+</head>
+<body>
+
+<div class="centered-container">
+  <a href="https://had-demo-tobacco-fisher.trycloudflare.com" class="btn btn-glow" role="button" id="fireworksButton">YUK ABSEN EVENT!!</a>
+</div>
+
+<div class="fireworks" id="fireworks"></div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  document.getElementById('fireworksButton').addEventListener('click', function() {
+    var fireworks = document.getElementById('fireworks');
+    fireworks.style.display = 'block';
+    setTimeout(function() {
+      fireworks.style.display = 'none';
+    }, 5000); // Display the fireworks for 5 seconds
+  });
+</script>
+
+</body>
+</html>
